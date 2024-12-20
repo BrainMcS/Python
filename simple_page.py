@@ -19,7 +19,7 @@ class MyHandler(SimpleHTTPRequestHandler):
                 <html>
                 <head><title>Simple HTTP Server</title></head>
                 <body>
-                    <h1>Hello, this is a simple HTTP server for Brian!</h1>
+                    <h1>Hello, this is a simple HTTP server for Brian for 2025!</h1>
                     <img src="/graph" alt="Simple Graph"/>
                 </body>
                 </html>
