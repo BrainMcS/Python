@@ -1,0 +1,49 @@
+name: Update top-level-domain-names dataset
+
+on:
+  schedule:
+    - cron: '0 0 1 * *'  # Run on the first day of each month at midnight
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:  # Manual trigger from the GitHub Actions UI
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12'
+
+    - name: Install dependencies
+      run: |
+        pip install -r script/requirements.txt
+
+    - name: Run Python script
+      run: |
+        python script/process.py
+
+    - name: Configure Git for commit
+      run: |
+        git config --global user.email "${{ env.CI_COMMIT_EMAIL }}"
+        git config --global user.name "${{ env.CI_COMMIT_NAME }}"
+      env:
+        CI_COMMIT_NAME: "Automated commit"
+        CI_COMMIT_EMAIL: "actions@users.noreply.github.com"
+
+    - name: Commit and push changes if any
+      run: |
+        git diff --quiet || (
+          git add data/ &&
+          git commit -m "Automated commit" &&
+          git push origin main
+        )
