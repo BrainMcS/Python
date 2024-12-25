@@ -26,11 +26,11 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install -r script/requirements.txt
+        pip install -r scrap_domain/script/requirements.txt
 
     - name: Run Python script
       run: |
-        python script/process.py
+        python scrap_domain/script/process.py  # Corrected path to your Python script
 
     - name: Configure Git for commit
       run: |
@@ -43,7 +43,7 @@ jobs:
     - name: Commit and push changes if any
       run: |
         git diff --quiet || (
-          git add data/ &&
+          git add scrap_domain/data/ &&  # Ensure we add data from the correct location
           git commit -m "Automated commit" &&
           git push origin main
         )
