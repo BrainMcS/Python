@@ -26,7 +26,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install -r scrap_domain/script/requirements.txt
+        pip3 install -r scrap_domain/script/requirements.txt
 
     - name: Run Python script
       run: |
