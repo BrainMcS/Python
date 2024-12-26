@@ -1,0 +1,6 @@
+0,"duplicate key value violates unique constraint ""ai_companies_pkey""
+DETAIL:  Key (id)=(1) already exists.
+","[1, 'Make My Day', 'Make My Day Charging Optimization for Electric Vehicle Drivers and Fleets', 2017.0, 'B2B, B2B2C', '11-50', 'A', '$5.5M', ', , , , , , , , , , , , , , , , , , , , , , enterprises, operations-optimization']"
+0,"duplicate key value violates unique constraint ""ai_companies_pkey""
+DETAIL:  Key (id)=(1) already exists.
+","[1, 'Make My Day', 'Make My Day Charging Optimization for Electric Vehicle Drivers and Fleets', 2017.0, 'B2B, B2B2C', '11-50', 'A', '$5.5M', ', , , , , , , , , , , , , , , , , , , , , , enterprises, operations-optimization']"
