@@ -1,0 +1,58 @@
+{
+  "title": "EU AI Companies",
+  "name": "eu-ai-companies",
+  "description": "This Data Package contains information about EU AI companies.",
+  "sources": [
+    {
+      "name": "eu-startups.com",
+      "path": "https://www.eu-startups.com/directory/?wpbdp_sort=field-1",
+      "title": "EU Startups Directory"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Brian Nickson",
+      "role": "maintainer"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "CC0-1.0",
+      "path": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "title": "Creative Commons Zero v1.0 Universal"
+    }
+  ],
+  "resources": [
+    {
+      "name": "eu_ai_companies.csv",
+      "path": "data/eu_ai_companies.csv",
+      "mediatype": "text/csv",
+      "bytes": 1331,
+      "schema": {
+        "fields": [
+          {
+            "name": "Name",
+            "type": "string"
+          },
+          {
+            "name": "Category",
+            "type": "string"
+          },
+          {
+            "name": "Based in",
+            "type": "string"
+          },
+          {
+            "name": "Tags",
+            "type": "string"
+          },
+          {
+            "name": "Founded",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ],
+  "collection": "business-data"
+}
