@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 # Define the base directory where the 'data' folder should be located (outside the script folder)
 base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # Get the parent directory of the script
 data_dir = os.path.join(base_dir, 'data')  # Create 'data' folder directly in the project root directory
-data = os.path.join(data_dir, 'top-level-domain-names.csv')
+data = os.path.join(data_dir, 'top-level-domain-names-dynamic.csv')
 datapackage = os.path.join(data_dir, 'datapackage.json')
 
 # Dynamic URL (can be changed or passed as a parameter)

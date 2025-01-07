@@ -1,0 +1,50 @@
+{
+  "title": "Top Level Domain Names",
+  "name": "top-level-domain-names",
+  "description": "Brian Nickson",
+  "sources": [
+    {
+      "name": "The Internet Assigned Numbers Authority (IANA)",
+      "path": "https://www.iana.org/domains/root/db",
+      "title": "The Internet Assigned Numbers Authority (IANA)"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Brian Nickson",
+      "role": "maintainer"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "ODC-PDDL-1.0",
+      "path": "http://opendatacommons.org/licenses/pddl/",
+      "title": "Open Data Commons Public Domain Dedication and License v1.0"
+    }
+  ],
+  "resources": [
+    {
+      "name": "top-level-domain-names.csv",
+      "path": "data/top-level-domain-names.csv",
+      "mediatype": "text/csv",
+      "bytes": 71047,
+      "schema": {
+        "fields": [
+          {
+            "name": "Domain",
+            "type": "string"
+          },
+          {
+            "name": "Type",
+            "type": "string"
+          },
+          {
+            "name": "TLD Manager",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ],
+  "collection": "reference-data"
+}
