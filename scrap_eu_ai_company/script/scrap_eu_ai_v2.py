@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 
 # Define the URL base and maximum page number
 base_url = 'https://www.eu-startups.com/directory/?wpbdp_sort=field-1'
-max_page_number = 2  # Adjust this as needed
+max_page_number = 15  # Adjust this as needed
 
 # Define paths
 base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

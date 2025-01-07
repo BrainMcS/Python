@@ -27,7 +27,7 @@
       "name": "eu_ai_companies.csv",
       "path": "data/eu_ai_companies.csv",
       "mediatype": "text/csv",
-      "bytes": 1331,
+      "bytes": 12920,
       "schema": {
         "fields": [
           {
